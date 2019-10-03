@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/es/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/es/blog/feed.xml</link>
+    <description></description>
+    <language>es</language>
+     <atom:link href="https://www.prestashop.com/es/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>¿Cómo utilizar el Black Hat SEO en eCommerce? (Webinar)</title>
+    <link>https://www.prestashop.com/es/blog/black-hat-seo</link>
+    <description>¿Cómo utilizar el Black Hat SEO en eCommerce?
+10 de octubre a las 16 horas (de España)
+</description>
+     <pubDate>Tue, 01 Oct 2019 18:08:54 +0200</pubDate>
+ <dc:creator>Jose Facchin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/black-hat-seo</guid>
+  </item>
+  <item>
+    <title>Clinic Summit 2019: el congreso sobre tendencias del mundo online</title>
+    <link>https://www.prestashop.com/es/blog/clinic-summit</link>
+    <description>¡Tan sólo faltan 6 días para el Clinic Summit’19!</description>
+     <pubDate>Tue, 01 Oct 2019 13:26:49 +0200</pubDate>
+ <dc:creator>Bertrand Amaraggi</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/clinic-summit</guid>
+  </item>
+  <item>
+    <title>¿Cómo encontrar nichos y rentabilizarlos con un eCommerce? (Webinar)</title>
+    <link>https://www.prestashop.com/es/blog/como-encontrar-nichos</link>
+    <description>¿Cómo encontrar nichos y rentabilizarlos con un eCommerce?
+3 de octubre a las 16 horas (de España)
+</description>
+     <pubDate>Tue, 24 Sep 2019 19:22:48 +0200</pubDate>
+ <dc:creator>Jose Facchin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/como-encontrar-nichos</guid>
+  </item>
+  <item>
+    <title>Google Merchant: ¿qué es y cómo crear una cuenta para tu negocio online?</title>
+    <link>https://www.prestashop.com/es/blog/google-merchant-center</link>
+    <description>Google Merchant Center es sin duda un aliado innegociable para cualquier tienda online.</description>
+     <pubDate>Tue, 24 Sep 2019 07:04:52 +0200</pubDate>
+ <dc:creator>José Antonio Neto Santizo</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/google-merchant-center</guid>
+  </item>
+  <item>
+    <title>¿Cómo encontrar proveedores de Dropshipping y negociar con ellos?</title>
+    <link>https://www.prestashop.com/es/blog/proveedores-dropshipping</link>
+    <description>¿Estás pensando en abrir tu tienda online, pero no tienes muy claro cómo encontrar a los mejores proveedores de Dropshipping?</description>
+     <pubDate>Mon, 23 Sep 2019 18:28:52 +0200</pubDate>
+ <dc:creator>Gemma Gálvez</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/proveedores-dropshipping</guid>
+  </item>
+  <item>
+    <title>Escalabilidad ¿cómo aplicarla para hacer crecer tu eCommerce?</title>
+    <link>https://www.prestashop.com/es/blog/escalabilidad</link>
+    <description>¿Aplicas la escalabilidad como mentalidad empresarial para hacer que tu negocio crezca día a día?</description>
+     <pubDate>Mon, 23 Sep 2019 08:19:48 +0200</pubDate>
+ <dc:creator>Julia Zakharova</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/escalabilidad</guid>
+  </item>
+  <item>
+    <title>PrestaShop Checkout: gestiona de manera simplificada los pagos en tu eCommerce</title>
+    <link>https://www.prestashop.com/es/blog/prestashop-checkout</link>
+    <description>PrestaShop y PayPal se asocian para ofrecerte la mejor solución de pago simplificada en esta vuelta de las vacaciones: &quot;PrestaShop Checkout&quot;.</description>
+     <pubDate>Fri, 20 Sep 2019 18:29:20 +0200</pubDate>
+ <dc:creator>Eva Lacalle</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/prestashop-checkout</guid>
+  </item>
+  <item>
+    <title>¿Qué es el SEO On-Page y qué factores tener en cuenta en tu Web?</title>
+    <link>https://www.prestashop.com/es/blog/seo-on-page</link>
+    <description>¿Conoces todos los factores que intervienen en un óptimo SEO On-Page?</description>
+     <pubDate>Fri, 20 Sep 2019 14:21:03 +0200</pubDate>
+ <dc:creator>Emilio Miguel López - Madre SEOperiora</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/seo-on-page</guid>
+  </item>
+  <item>
+    <title>¿Cómo hacer una Auditoría SEO paso a paso a tu eCommerce? (Webinar)</title>
+    <link>https://www.prestashop.com/es/blog/webinar-auditoria-seo</link>
+    <description>¿Cómo hacer una Auditoría SEO paso a paso a la Web de tu tienda online?
+26 de septiembre de 2019 a las 16 horas (de España)</description>
+     <pubDate>Thu, 19 Sep 2019 11:19:27 +0200</pubDate>
+ <dc:creator>Jose Facchin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/webinar-auditoria-seo</guid>
+  </item>
+  <item>
+    <title>¿Cómo preparar la &amp;quot;vuelta al cole&amp;quot; de tu tienda online?</title>
+    <link>https://www.prestashop.com/es/blog/como-preparar-la-vuelta-al-cole-por-internet</link>
+    <description>Hoy en día, la llamada &quot;vuelta al cole&quot; es el segundo momento más importante del año en todo eCommerce, pues las búsquedas en Google aumentan alrededor de un 20%.</description>
+     <pubDate>Wed, 18 Sep 2019 07:58:21 +0200</pubDate>
+ <dc:creator>Eva Lacalle</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/es/blog/como-preparar-la-vuelta-al-cole-por-internet</guid>
+  </item>
+  </channel>
+</rss>
