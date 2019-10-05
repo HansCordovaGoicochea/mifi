@@ -156,6 +156,16 @@ class CustomerCore extends ObjectModel
     public $telefono_celular;
     /** estado si es credito es para ver si al cliente se puede dar credito**/
     public $es_credito = 0;
+    public $tipo_vivienda;
+    public $medidor;
+    public $grado_instruccion;
+    public $ocupacions;
+    public $num_hijos;
+    public $lugar_nac;
+    public $fecha_inscrip;
+    public $estado_civil;
+
+
 
     protected $webserviceParameters = array(
         'fields' => array(
@@ -221,6 +231,16 @@ class CustomerCore extends ObjectModel
             'telefono' => array('type' => self::TYPE_STRING),
             'telefono_celular' => array('type' => self::TYPE_STRING),
             'es_credito' => array('type' => self::TYPE_INT),
+            'tipo_vivienda' => array('type' => self::TYPE_STRING),
+            'medidor' => array('type' => self::TYPE_STRING),
+            'grado_instruccion' => array('type' => self::TYPE_STRING),
+            'ocupacion' => array('type' => self::TYPE_STRING),
+            'num_hijos' => array('type' => self::TYPE_INT),
+            'lugar_nac' => array('type' => self::TYPE_STRING),
+            'fecha_inscrip' => array('type' => self::TYPE_DATE),
+            'estado_civil' => array('type' => self::TYPE_STRING),
+
+
         ),
     );
 

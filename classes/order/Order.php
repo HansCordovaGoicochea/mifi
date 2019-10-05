@@ -173,6 +173,8 @@ class OrderCore extends ObjectModel
     */
     public $round_type;
 
+
+
     /**
      * @see ObjectModel::$definition
      */
