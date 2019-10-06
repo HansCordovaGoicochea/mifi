@@ -322,6 +322,12 @@ class WebserviceRequestCore
             'shop_urls' => array('description' => 'Shop URLs from multi-shop feature', 'class' => 'ShopUrl'),
             'product_customization_fields' => array('description' => 'Customization Field', 'class' => 'CustomizationField'),
             'customizations' => array('description' => 'Customization values', 'class' => 'Customization'),
+            'mifi_ahorros' => array('description' => 'Ahorros del cliente', 'class' => 'MifiAhorros'),
+            'mifi_cuotas' => array('description' => 'cuotas a pagar del cliente', 'class' => 'MifiCuotas'),
+            'mifi_movimientos' => array('description' => 'listado de movimientos del cliente', 'class' => 'MifiMovimientos'),
+            'mifi_prestamo' => array('description' => 'prestamo vigente del cliente', 'class' => 'MifiPrestamo'),
+            'mifi_servicio' => array('description' => 'servicio que tiene la epresa', 'class' => 'MifiServicio'),
+
         );
         $extra_resources = Hook::exec('addWebserviceResources', array('resources' => $resources), null, true, false);
         if (is_array($extra_resources) && count($extra_resources)) {
