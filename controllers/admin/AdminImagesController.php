@@ -62,7 +62,8 @@ class AdminImagesControllerCore extends AdminController
             'categories' => array('title' => $this->trans('Categories', array(), 'Admin.Global'), 'align' => 'center', 'type' => 'bool', 'callback' => 'printEntityActiveIcon', 'orderby' => false),
             'manufacturers' => array('title' => $this->trans('Brands', array(), 'Admin.Global'), 'align' => 'center', 'type' => 'bool', 'callback' => 'printEntityActiveIcon', 'orderby' => false),
             'suppliers' => array('title' => $this->trans('Suppliers', array(), 'Admin.Global'), 'align' => 'center', 'type' => 'bool', 'callback' => 'printEntityActiveIcon', 'orderby' => false),
-            'stores' => array('title' => $this->trans('Stores', array(), 'Admin.Global'), 'align' => 'center', 'type' => 'bool', 'callback' => 'printEntityActiveIcon', 'orderby' => false)
+            'stores' => array('title' => $this->trans('Stores', array(), 'Admin.Global'), 'align' => 'center', 'type' => 'bool', 'callback' => 'printEntityActiveIcon', 'orderby' => false),
+            'ofertas' => array('title' => $this->trans('Ofertas', array(), 'Admin.Global'), 'align' => 'center', 'type' => 'bool', 'callback' => 'printEntityActiveIcon', 'orderby' => false)
         );
 
         // No need to display the old image system migration tool except if product images are in _PS_PROD_IMG_DIR_
@@ -319,6 +320,26 @@ class AdminImagesControllerCore extends AdminController
                         ),
                         array(
                             'id' => 'stores_off',
+                            'value' => 0,
+                            'label' => $this->trans('Disabled', array(), 'Admin.Global')
+                        ),
+                    )
+                ),
+                array(
+                    'type' => 'switch',
+                    'label' => $this->trans('Ofertas', array(), 'Admin.Global'),
+                    'name' => 'ofertas',
+                    'required' => false,
+                    'is_bool' => true,
+                    'hint' => $this->trans('Este tipo se aplicará a las imágenes de Ofertas.', array(), 'Admin.Design.Help'),
+                    'values' => array(
+                        array(
+                            'id' => 'ofertas_on',
+                            'value' => 1,
+                            'label' => $this->trans('Enabled', array(), 'Admin.Global')
+                        ),
+                        array(
+                            'id' => 'ofertas_off',
                             'value' => 0,
                             'label' => $this->trans('Disabled', array(), 'Admin.Global')
                         ),

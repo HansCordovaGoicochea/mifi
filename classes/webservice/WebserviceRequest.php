@@ -327,6 +327,7 @@ class WebserviceRequestCore
             'mifi_movimientos' => array('description' => 'listado de movimientos del cliente', 'class' => 'MifiMovimientos'),
             'mifi_prestamo' => array('description' => 'prestamo vigente del cliente', 'class' => 'MifiPrestamo'),
             'mifi_servicio' => array('description' => 'servicio que tiene la epresa', 'class' => 'MifiServicio'),
+            'ofertas' => array('description' => 'Ofertas', 'class' => 'Oferta'),
 
         );
         $extra_resources = Hook::exec('addWebserviceResources', array('resources' => $resources), null, true, false);

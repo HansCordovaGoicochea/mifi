@@ -54,6 +54,7 @@ class WebserviceSpecificManagementImagesCore implements WebserviceSpecificManage
         'suppliers' => array(),
         'stores' => array(),
         'customizations' => array(),
+        'ofertas' => array(),
     );
 
     /**
@@ -292,6 +293,10 @@ class WebserviceSpecificManagementImagesCore implements WebserviceSpecificManage
             case 'categories':
             case 'manufacturers':
             case 'suppliers':
+            case 'ofertas':
+                $this->imageType = "ofertas";
+                return $this->manageDeclinatedImagesOfertas(_PS_IMG_DIR_.'ofertas/');
+                break;
             case 'stores':
                 switch ($this->wsObject->urlSegment[1]) {
                     case 'categories':
@@ -628,6 +633,33 @@ class WebserviceSpecificManagementImagesCore implements WebserviceSpecificManage
         // Get available image sizes for the current image type
         $normal_image_sizes = ImageType::getImagesTypes($this->imageType);
         switch ($this->wsObject->urlSegment[2]) {
+            // Match the default images
+            case 'default':
+                return $this->manageDefaultDeclinatedImages($directory, $normal_image_sizes);
+                break;
+            // Display the list of images
+            case '':
+                return $this->manageListDeclinatedImages($directory, $normal_image_sizes);
+                break;
+            default:
+                return $this->manageEntityDeclinatedImages($directory, $normal_image_sizes);
+                break;
+        }
+    }
+
+    /**
+     * Management of normal images (as categories, suppliers, manufacturers and stores)
+     *
+     * @param string $directory the file path of the root of the images folder type
+     * @return bool
+     */
+    protected function manageDeclinatedImagesOfertas($directory)
+    {
+//        d($this->imageType);
+        // Get available image sizes for the current image type
+        $normal_image_sizes = ImageType::getImagesTypes($this->imageType);
+//        d($this->wsObject ->urlSegment[2]);
+        switch ($this->wsObject ->urlSegment[2]) {
             // Match the default images
             case 'default':
                 return $this->manageDefaultDeclinatedImages($directory, $normal_image_sizes);
