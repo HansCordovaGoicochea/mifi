@@ -75,7 +75,6 @@ class AdminCustomersControllerCore extends AdminController
         $this->_join .= 'LEFT JOIN '._DB_PREFIX_.'gender_lang gl ON (a.id_gender = gl.id_gender AND gl.id_lang = '.(int)$this->context->language->id.')';
         $this->_join .= 'LEFT JOIN '._DB_PREFIX_.'tipodocumentolegal tdl ON (a.id_document = tdl.id_tipodocumentolegal)';
         $this->_use_found_rows = false;
-        $this->_where .= " AND id_customer > 1 AND id_customer != 49";
 
         $this->fields_list = array(
             'id_customer' => array(
