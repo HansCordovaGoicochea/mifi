@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d442ab8c-5f55-458d-85ee-72a5220aead1" name="mifi" url="http://nelcorp.org">
+        <fileTransfer host="nelcorp.org" port="21" rootFolder="/mifi.nelcorp.org">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
