@@ -159,7 +159,7 @@ class CustomerCore extends ObjectModel
     public $tipo_vivienda;
     public $medidor;
     public $grado_instruccion;
-    public $ocupacions;
+    public $ocupacion;
     public $num_hijos;
     public $lugar_nac;
     public $fecha_inscrip;
