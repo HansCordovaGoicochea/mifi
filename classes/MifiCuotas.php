@@ -4,12 +4,11 @@ class MifiCuotasCore extends ObjectModel
 {
     public $id;
     public $fecha_cuota;
-    public $monto;
-    public $estado;
+    public $monto_capital;
     public $pago_interes;
     public $seguro_degravamen;
-    public $aporte;
-    public $id_prestamo;
+    public $monto_mora;
+    public $estado;
 
 
 
@@ -22,12 +21,11 @@ class MifiCuotasCore extends ObjectModel
         'multilang' => true,
         'fields' => array(
             'fecha_cuota' =>array('type' => self::TYPE_DATE),
-            'monto' => array('type' => self::TYPE_FLOAT),
-            'estado' => array('type' => self::TYPE_INT),
+            'monto_capital' => array('type' => self::TYPE_FLOAT),
             'pago_interes' => array('type' => self::TYPE_FLOAT),
             'seguro_degravamen' => array('type' => self::TYPE_FLOAT),
-            'aporte' => array('type' => self::TYPE_FLOAT),
-            'id_prestamo' => array('type' => self::TYPE_INT),
+            'monto_mora' => array('type' => self::TYPE_FLOAT),
+            'estado' => array('type' => self::TYPE_BOOL),
 
 
         ),
