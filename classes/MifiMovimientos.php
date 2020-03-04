@@ -3,11 +3,10 @@
 class MifiMovimientosCore extends ObjectModel
 {
     public $id;
-    public $id_cliente;
-    public $id_ahorros;
-    public $estado_movimiento;
+    public $id_mifi_servicios;
     public $monto_movimiento;
     public $fecha_movimiento;
+    public $estado_movimiento;
 
 
 
@@ -19,11 +18,10 @@ class MifiMovimientosCore extends ObjectModel
         'primary' => 'id_mifi_movimientos',
         'multilang' => true,
         'fields' => array(
-            'id_cliente' =>array('type' => self::TYPE_INT),
-            'id_ahorros' => array('type' => self::TYPE_INT),
-            'estado_movimiento' => array('type' => self::TYPE_INT),
+            'id_mifi_servicios' =>array('type' => self::TYPE_INT),
             'monto_movimiento' => array('type' => self::TYPE_FLOAT),
             'fecha_movimiento' => array('type' => self::TYPE_DATE),
+            'estado_movimiento' => array('type' => self::TYPE_BOOL),
 
 
         ),

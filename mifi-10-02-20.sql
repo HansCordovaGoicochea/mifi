@@ -1,34 +1,18 @@
-/*
-SQLyog Community v13.1.2 (64 bit)
-MySQL - 10.1.34-MariaDB : Database - mifi
-*********************************************************************
-*/
 
-/*!40101 SET NAMES utf8 */;
-
-/*!40101 SET SQL_MODE=''*/;
-
-/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-CREATE DATABASE /*!32312 IF NOT EXISTS*/`mifi` /*!40100 DEFAULT CHARACTER SET latin1 */;
-
-USE `mifi`;
 
 /*Table structure for table `tm_access` */
 
 DROP TABLE IF EXISTS `tm_access`;
 
 CREATE TABLE `tm_access` (
-  `id_profile` int(10) unsigned NOT NULL,
-  `id_authorization_role` int(10) unsigned NOT NULL,
+  `id_profile` INT(10) UNSIGNED NOT NULL,
+  `id_authorization_role` INT(10) UNSIGNED NOT NULL,
   PRIMARY KEY (`id_profile`,`id_authorization_role`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=INNODB DEFAULT CHARSET=utf8;
 
 /*Data for the table `tm_access` */
 
-insert  into `tm_access`(`id_profile`,`id_authorization_role`) values 
+INSERT  INTO `tm_access`(`id_profile`,`id_authorization_role`) VALUES 
 (1,1),
 (1,2),
 (1,3),
