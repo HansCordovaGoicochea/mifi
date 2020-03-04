@@ -473,7 +473,7 @@ class AdminCustomersControllerCore extends AdminController
 
                 ),
                 array(
-                    'form_group_class' => 'hide',
+//                    'form_group_class' => 'hide',
                     'type' => 'password',
                     'label' => $this->trans('Password', array(), 'Admin.Global'),
                     'name' => 'passwd',
