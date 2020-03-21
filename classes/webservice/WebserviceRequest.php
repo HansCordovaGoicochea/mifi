@@ -323,7 +323,7 @@ class WebserviceRequestCore
             'product_customization_fields' => array('description' => 'Customization Field', 'class' => 'CustomizationField'),
             'customizations' => array('description' => 'Customization values', 'class' => 'Customization'),
             'mifi_cuotas' => array('description' => 'cuotas a pagar del cliente', 'class' => 'MifiCuotas'),
-            'mifi_mov_generado_mensual' => array('description' => 'Mov. generado mensual', 'class' => 'MifiMovGeneradoMensual.php'),
+            'mifi_mov_generado_mensual' => array('description' => 'Mov. generado mensual', 'class' => 'MifiMovGeneradoMensual'),
             'mifi_movimientos' => array('description' => 'listado de movimientos del cliente', 'class' => 'MifiMovimientos'),
             'mifi_servicios' => array('description' => 'servicio que tiene la epresa', 'class' => 'MifiServicios'),
             'ofertas' => array('description' => 'Ofertas', 'class' => 'Oferta'),

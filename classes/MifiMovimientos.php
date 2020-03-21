@@ -16,7 +16,6 @@ class MifiMovimientosCore extends ObjectModel
     public static $definition = array(
         'table' => 'mifi_movimientos',
         'primary' => 'id_mifi_movimientos',
-        'multilang' => true,
         'fields' => array(
             'id_mifi_servicios' =>array('type' => self::TYPE_INT),
             'monto_movimiento' => array('type' => self::TYPE_FLOAT),

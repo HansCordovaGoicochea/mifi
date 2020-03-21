@@ -14,6 +14,7 @@ class MifiServiciosCore extends ObjectModel
     public $tasa_interes_servicio;
     public $id_currecy;
     public $estado_servicio;
+    public $codigo_servicio;
 
 
 
@@ -23,7 +24,6 @@ class MifiServiciosCore extends ObjectModel
     public static $definition = array(
         'table' => 'mifi_servicios',
         'primary' => 'id_mifi_servicios',
-        'multilang' => true,
         'fields' => array(
             'id_customer' =>array('type' => self::TYPE_INT),
             'nombre_servicio' => array('type' => self::TYPE_STRING),
@@ -36,6 +36,7 @@ class MifiServiciosCore extends ObjectModel
             'tasa_interes_servicio' => array('type' => self::TYPE_FLOAT),
             'id_currecy' => array('type' => self::TYPE_INT),
             'estado_servicio' => array('type' => self::TYPE_BOOL),
+            'codigo_servicio' => array('type' => self::TYPE_INT),
 
 
 

@@ -18,7 +18,6 @@ class MifiCuotasCore extends ObjectModel
     public static $definition = array(
         'table' => 'mifi_cutas',
         'primary' => 'id_mifi_cuotas',
-        'multilang' => true,
         'fields' => array(
             'fecha_cuota' =>array('type' => self::TYPE_DATE),
             'monto_capital' => array('type' => self::TYPE_FLOAT),
