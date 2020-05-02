@@ -6,7 +6,7 @@ class MifiMovimientosCore extends ObjectModel
     public $id_mifi_servicios;
     public $monto_movimiento;
     public $fecha_movimiento;
-    public $estado_movimiento;
+    public $estado_movimiento; //1 deposito 0 retiro;
 
 
 

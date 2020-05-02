@@ -15,6 +15,8 @@ class MifiServiciosCore extends ObjectModel
     public $id_currecy;
     public $estado_servicio;
     public $codigo_servicio;
+    public $sum_ultimo_mes_retiro;
+    public $sum_ultimo_mes_deposito;
 
 
 
@@ -37,11 +39,51 @@ class MifiServiciosCore extends ObjectModel
             'id_currecy' => array('type' => self::TYPE_INT),
             'estado_servicio' => array('type' => self::TYPE_BOOL),
             'codigo_servicio' => array('type' => self::TYPE_INT),
-
+            'sum_ultimo_mes_retiro' => array('type' => self::TYPE_FLOAT),
+            'sum_ultimo_mes_deposito' => array('type' => self::TYPE_FLOAT),
 
 
         ),
     );
 
+    protected $webserviceParameters = array(
+        'objectNodeNames' => 'mifi_servicios',
+        'fields' => array(
+            'sum_ultimo_mes_retiro' => array(
+                'getter' => 'getSumRetiro'
+            ),
+            'sum_ultimo_mes_deposito' => array(
+                'getter' => 'getSumDeposito'
+            ),
+        )
+    );
+
+
+    public function getSumRetiro()
+    {
+        $servicio = new MifiServicios($this->id);
+
+        if ((int)$servicio->id > 0){
+            $sql = "SELECT sum(monto_movimiento) FROM tm_mifi_movimientos where id_mifi_servicios = ".$servicio->id . " AND estado_movimiento = 0 ";
+        }else{
+            throw new WebserviceException('Not implemented yet', array(100, 400));
+        }
+
+        return Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue($sql);
+    }
+
+    public function getSumDeposito()
+    {
+        $servicio = new MifiServicios($this->id);
+
+        if ((int)$servicio->id > 0){
+            $sql = "SELECT sum(monto_movimiento) FROM tm_mifi_movimientos where id_mifi_servicios = ".$servicio->id. " AND estado_movimiento = 1 ";
+        }else{
+            throw new WebserviceException('Not implemented yet', array(100, 400));
+        }
+
+        return Db::getInstance(_PS_USE_SQL_SLAVE_)->getValue($sql);
+
+    }
 }
  

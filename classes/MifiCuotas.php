@@ -8,7 +8,8 @@ class MifiCuotasCore extends ObjectModel
     public $pago_interes;
     public $seguro_degravamen;
     public $monto_mora;
-    public $estado;
+    public $estado; // 0 deuda 1 pagada
+    public $id_mifi_servicios;
 
 
 
@@ -16,9 +17,10 @@ class MifiCuotasCore extends ObjectModel
      * @see ObjectModel::$definition
      */
     public static $definition = array(
-        'table' => 'mifi_cutas',
+        'table' => 'mifi_cuotas',
         'primary' => 'id_mifi_cuotas',
         'fields' => array(
+            'id_mifi_servicios' =>array('type' => self::TYPE_INT),
             'fecha_cuota' =>array('type' => self::TYPE_DATE),
             'monto_capital' => array('type' => self::TYPE_FLOAT),
             'pago_interes' => array('type' => self::TYPE_FLOAT),
